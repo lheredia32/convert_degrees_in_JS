@@ -1,0 +1,48 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.display {
+  display: none;
+}
+
+.body {
+  background-color: bisque;
+}
+
+.modalContainer {
+  display: none;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: all 500ms ease;
+}
+
+.modalContainer .modal-content {
+  background-color: rgb(37, 224, 224);
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #6927a7;
+  width: 20%;
+  bottom: 600%;
+  transition: all 500ms ease;
+}
+
+.modalContainer .close {
+  color: red;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Degrees</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <center>
+      <h1>Calculating Degrees</h1>
+
+      <h3>
+        Select 1 for convert from Celsius to Fahrenheit or select 2 from
+        Fahrenheit to Celsius:
+      </h3>
+      <input id="option" value="" type="number" placeholder="Type an option" />
+      <button onclick="showDisplay()">Enter</button>
+
+      <div class="display" id="display">
+        <h3>Type a Temperature:</h3>
+        <input id="temp" type="number" value="" placeholder="Type a temp" />
+        <button onclick="conversion()" id="buttonModal">CALCULATE</button>
+
+        <div id="myModal" class="modalContainer">
+          <div class="modal-content" id="content">
+            <span onclick="closeModal()" class="close">X</span>
+          </div>
+        </div>
+      </div>
+    </center>
+    <div id="data"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
